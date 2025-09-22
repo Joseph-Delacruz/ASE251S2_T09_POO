@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Angello Trattoria & Pizzeria{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
+  {% block extra_css %}{% endblock %}
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <main>
+    {% block content %}{% endblock %}
+  </main>
+
+    <footer class="bg-gray-200 p-4 text-center">
+    © 2025 Angello Trattoria & Pizzeria
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Agradecimiento{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/agradecimiento/agradecimiento.css') }}">
+{% endblock %}
+{% block content %}
+<h1 class="text-4xl font-bold mb-4">¡Gracias por tu reserva!</h1>
+<p class="text-lg">Mensaje de confirmación y agradecimiento.</p>
+{% endblock %}
